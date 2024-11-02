@@ -1,16 +1,30 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color:#333;
     margin: 0;
     padding: 0;
+    
 }
 
-h1 {
+header{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+header h1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin: 40px 0 20px 0;
-    color: #333;
+    color: #343a40;
+}
+
+header p{
+    color: #666;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .container {
@@ -32,7 +46,7 @@ h1 {
     margin: 10px;
     padding-bottom: 20px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -52,7 +66,7 @@ h1 {
 }
 
 .book-teacher {
-    background: #4CAF50;
+    background: #28a745;
     color: #ffffff;
     cursor: pointer;
     font-size: 14px;
@@ -62,12 +76,12 @@ h1 {
     padding: 5px 15px;
     margin: 10px auto 0;
     margin-top: auto;
-    transition: background-color 0.2s, transform 0.4s;
+    transition: background-color 0.2s ease;
 }
 
 .book-teacher:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
+    background-color: #218838;
+    
 }
 
 .teacher-name {
